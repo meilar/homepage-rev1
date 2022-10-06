@@ -13,7 +13,8 @@ export const MainLayout: React.FC<MainLayoutProps> = (props) => {
     <Box sx={sxRoot}>
       <TopMenu />
       <Box sx={sxMain}>
-        {pageTitle && <Typography>{pageTitle}</Typography>}
+        {pageTitle && <Typography variant="h3">{pageTitle}</Typography>}
+        <Box sx={{ height: "1em" }} />
         {children}
       </Box>
     </Box>
@@ -21,11 +22,10 @@ export const MainLayout: React.FC<MainLayoutProps> = (props) => {
 };
 
 const sxRoot = {
-  width: "fit-contents",
-  minWidth: "100vw",
-  height: "fit-contents",
-  minHeight: "100vh",
-  backgroundColor: "red",
+  height: "100%",
+  width: "100%",
 };
 
-const sxMain = {};
+const sxMain = {
+  margin: "4em",
+};
