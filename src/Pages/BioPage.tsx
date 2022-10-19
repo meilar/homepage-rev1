@@ -51,11 +51,8 @@ export const BioPage = () => {
 };
 
 const sxRoot = {
-  width: "100%",
-  ml: "4em",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
+  // display: "flex",
+  // flexDirection: "row",
 };
 
 const sxHeadshot = {
@@ -83,9 +80,8 @@ const sxParagraph = {
 };
 
 const sxPhotos = {
-  width: "40vh",
+  width: "40%",
 };
 const sxText = {
-  width: "60vh",
-  mr: "12em",
+  width: "60%",
 };

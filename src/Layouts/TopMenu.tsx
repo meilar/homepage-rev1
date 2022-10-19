@@ -1,4 +1,4 @@
-import { Box, IconButton, Link, Paper, Typography } from "@mui/material";
+import { Box, IconButton, Paper, Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import { useNavigate } from "react-router-dom";
 import { MenuItem } from "../Components/MenuItem";
@@ -9,7 +9,7 @@ export const TopMenu = () => {
     navigate("/");
   };
   return (
-    <Paper square elevation={10} sx={sxRoot}>
+    <Paper className="TopMenuRoot" square elevation={10} sx={sxRoot}>
       <>
         <Box sx={sxMenu}>
           <Box>
@@ -26,7 +26,6 @@ export const TopMenu = () => {
               flexDirection: "row",
               ml: "2em",
               alignItems: "center",
-
             }}
           >
             <MenuItem label="Biography" destination="/biography" />
@@ -42,9 +41,10 @@ export const TopMenu = () => {
 };
 
 const sxRoot = {
-  height: "10vh",
+  height: "10%",
   width: "100vw",
   backgroundColor: "#a3b18a",
+  overflow: "hidden",
 };
 
 const sxMenu = {
